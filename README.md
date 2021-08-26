@@ -74,4 +74,8 @@ linux里面为单引号，win为双引号
 删除分支命令
 
 ## 5.软件中的关联
-直接push就能刷新
+
+	git add .
+	git commit -m "xxxx"
+    git push gitee master
+    git push github master
