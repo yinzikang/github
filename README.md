@@ -18,28 +18,28 @@ github/gitee云端
 ### 1. 远端创建仓库
 在GitHub/Gitee上建立新的仓库，命名为test(分支？)，获得两个Git URL
 
-    `https://gitee.com/y-zk/test.git`  
-    `https://github.com/yinzikang/test.git`  
+	https://gitee.com/y-zk/test.git  
+	https://github.com/yinzikang/test.git  
   
 ### 2. 本地创建仓库
-	`cd test/`
-	`git init`
-	`touch README.md`
-	`git add .`
-	`git commit -m "xxxx"`
-    `git remote -v`
-    `git remote rm origin`
-    `git remote add gitee https://gitee.com/y-zk/test.git`
-    `git remote add github https://github.com/yinzikang/test.git`
-    `git push gitee master`
-    `git push github master`
+	cd test/
+	git init
+	touch README.md
+	git add .
+	git commit -m "xxxx"
+    git remote -v
+    git remote rm origin
+    git remote add gitee https://gitee.com/y-zk/test.git
+    git remote add github https://github.com/yinzikang/test.git
+    git push gitee master
+    git push github master
 
 
 ## 3. 对已有的仓库进行修改
-	`git clone https://gitee.com/y-zk/test.git`	
-	`git add .`
-	`git commit -m "xxxx"`
-    `git push origin master`
+	git clone https://gitee.com/y-zk/test.git	
+	git add .
+	git commit -m "xxxx"
+    git push origin master
 
 ## 4. 命令详解
 ###`git init`
