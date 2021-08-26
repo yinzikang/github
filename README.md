@@ -64,6 +64,14 @@ linux里面为单引号，win为双引号
 ###`git pull`
 下载远程仓库并合并。  
 语法`git pull <远程主机名> <本地分支名>:<远程分支名>`，或`git push <远程主机名> <本地分支名>`。
+###`git branch branchname`
+创建分支命令
+###`git checkout branchname`
+切换分支命令
+###`git branch`
+列出分支基本命令
+###`git branch -d branchname`
+删除分支命令
 
 ## 5.软件中的关联
 直接push就能刷新
