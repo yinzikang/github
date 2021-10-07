@@ -96,5 +96,6 @@ linux里面为单引号，win为双引号
 删除分支命令
 
 ## 5.软件中的关联
-
+已链接到pycharm
+点击右上角即可选择git commit，git push
 	
