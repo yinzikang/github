@@ -97,5 +97,7 @@ linux里面为单引号，win为双引号
 
 ## 5.软件中的关联
 已链接到pycharm
-点击右上角即可选择git commit，git push
-	
+1. 创建文件，文件为红色，则右键点击该文件并`git add`
+2. 若文件发生更改，则颜色变为蓝色
+3. 点击右上角`git commit`，选择master与branch进行`git push`
+4. 文件变为白色，完成
