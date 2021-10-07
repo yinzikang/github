@@ -59,7 +59,11 @@ GitHub 上的项目板帮助您组织工作和排列工作的优先级。 您可
 网页上可以上传，但是一定时长内个数有上限
 
 ## 5.云端部分修改文件后，本地的更新
-	git pull origin
+	方法1
+    git pull origin
+    方法2
+    git fetch origin master
+    git merge FETCH_HEAD
 
 ## 6. 命令详解
 ###`git init`
@@ -83,7 +87,12 @@ linux里面为单引号，win为双引号
 <远程主机名>、<本地分支名>、<远程分支名>都为url与master的别名，因此取什么都行，一般会初始化origin与master，如git clone url1 master1后，将主动将clone指向为url1，将master指向为master1
 ###`git pull`
 下载远程仓库并合并。  
-语法`git pull <远程主机名> <本地分支名>:<远程分支名>`，或`git push <远程主机名> <本地分支名>`。
+语法`git pull <远程主机名> <本地分支名>:<远程分支名>`，或`git pull <远程主机名> <本地分支名>`。  
+不加master就是把云端所有更新同步，否则只同步该分支
+###`git fetch`
+下载远程仓库。不加master就是把云端所有更新同步，否则只同步该分支
+###`git merge`
+合并仓库不加master就是把云端所有更新同步，否则只同步该分支
 ###`git branch branchname`
 创建分支命令
 ###`git checkout branchname`
@@ -97,7 +106,10 @@ linux里面为单引号，win为双引号
 
 ## 5.软件中的关联
 已链接到pycharm
+###上传
 1. 创建文件，文件为红色，则右键点击该文件并`git add`
 2. 若文件发生更改，则颜色变为蓝色
 3. 点击右上角`git commit`，选择master与branch进行`git push`
 4. 文件变为白色，完成
+### 同步
+右上角update project
